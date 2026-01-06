@@ -1141,29 +1141,26 @@
 
                             <!-- Right: Contact Form -->
                             <div class="col-md-7">
-                                <form id="contactForm" class="contact-form">
+                                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm" class="contact-form">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="name" required>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                                         <label for="name">Name</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="email" required>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                         <label for="email">Email</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="subject" required>
+                                        <input type="text" class="form-control" id="subject" name="_subject" placeholder="Subject" required>
                                         <label for="subject">Subject</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" style="height: 120px"
-                                            required></textarea>
+                                        <textarea class="form-control" id="message" name="message" style="height: 120px" placeholder="Message" required></textarea>
                                         <label for="message">Message</label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-primary-custom w-100"
-                                        id="submitBtn">
-                                        <span><i class="bi bi-send me-2"></i>Send Message</span>
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 btn-primary-custom">
+                                        <i class="bi bi-send me-2"></i>Send Message
                                     </button>
-                                    <div id="formMessage" class="mt-3"></div>
                                 </form>
                             </div>
                         </div>
